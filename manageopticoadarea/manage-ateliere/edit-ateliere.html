@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title> - Opticoat</title>
+      <meta name="generator" content="PrestaShop">
+      <meta name="robots" content="index,follow">
+      <meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <link rel="icon" type="image/vnd.microsoft.icon" href="https://www.opticoatpro.ro/img/favicon.ico?1491945322">
+      <link rel="shortcut icon" type="image/x-icon" href="https://www.opticoatpro.ro/img/favicon.ico?1491945322">
+      <link rel="stylesheet" href="./index_files/global.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./index_files/highdpi.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./index_files/responsive-tables.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./index_files/uniform.default.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./index_files/cms.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./index_files/blockbestsellers.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./index_files/blockcategories.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./index_files/blockcurrencies.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./index_files/blocklanguages.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./index_files/blockcontact.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./index_files/blockmyaccount.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./index_files/blocknewproducts.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./index_files/blocknewsletter.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./index_files/blockspecials.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./index_files/blocktags.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./index_files/blocktopmenu.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./index_files/superfish-modified.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./index_files/blockuserinfo.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./index_files/hooks.css" type="text/css" media="all">
+      <script type="text/javascript">
+         var FancyboxI18nClose = 'Close';
+         var FancyboxI18nNext = 'Next';
+         var FancyboxI18nPrev = 'Previous';
+         var ajaxsearch = true;
+         var baseDir = 'http://www.opticoatpro.ro/';
+         var baseUri = 'http://www.opticoatpro.ro/';
+         var contentOnly = false;
+         var currency = {"id":1,"name":"Lei","iso_code":"RON","iso_code_num":"946","sign":"lei","blank":"1","conversion_rate":"1.000000","deleted":"0","format":"2","decimals":"1","active":"1","prefix":"","suffix":" lei","id_shop_list":null,"force_id":false};
+         var currencyBlank = 1;
+         var currencyFormat = 2;
+         var currencyRate = 1;
+         var currencySign = 'lei';
+         var displayList = false;
+         var highDPI = false;
+         var id_lang = 1;
+         var instantsearch = false;
+         var isGuest = 0;
+         var isLogged = 0;
+         var isMobile = false;
+         var page_name = 'cms';
+         var placeholder_blocknewsletter = 'Enter your e-mail';
+         var priceDisplayMethod = 0;
+         var priceDisplayPrecision = 2;
+         var quickView = false;
+         var roundMode = 2;
+         var static_token = 'c423a2b5cc92405b3ce3572898631642';
+         var token = 'c56c32aef6817d436373a1b68128479f';
+         var usingSecureMode = false;
+      </script>
+      <script type="text/javascript" src="./index_files/jquery-1.11.0.min.js.download"></script>
+      <script type="text/javascript" src="./index_files/jquery-migrate-1.2.1.min.js.download"></script>
+      <script type="text/javascript" src="./index_files/jquery.easing.js.download"></script>
+      <script type="text/javascript" src="./index_files/tools.js.download"></script>
+      <script type="text/javascript" src="./index_files/global.js.download"></script>
+      <script type="text/javascript" src="./index_files/10-bootstrap.min.js.download"></script>
+      <script type="text/javascript" src="./index_files/15-jquery.total-storage.min.js.download"></script>
+      <script type="text/javascript" src="./index_files/15-jquery.uniform-modified.js.download"></script>
+      <script type="text/javascript" src="./index_files/treeManagement.js.download"></script>
+      <script type="text/javascript" src="./index_files/blocknewsletter.js.download"></script>
+      <script type="text/javascript" src="./index_files/hoverIntent.js.download"></script>
+      <script type="text/javascript" src="./index_files/superfish-modified.js.download"></script>
+      <script type="text/javascript" src="./index_files/blocktopmenu.js.download"></script>
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin,latin-ext" type="text/css" media="all" />
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/821cea7726.js" crossorigin="anonymous"></script>
+      <!--[if IE 8]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+      <script>
+         function controlAtelier(obj) {
+            var parentRow = obj.parentElement.parentElement;
+
+            //var current_username = $(parentRow).data('username');
+
+            $.post('/script/manageAtelier.php', {
+               type: 'control',
+               username: $(parentRow).data('username'),
+               value: $(obj).data('bool')
+            }, function (data, status) {
+               if (data == 'success') {
+                  location.reload();
+               }
+            });
+         }
+         
+         function uploadRow(obj) {
+            var parentRow = obj.parentElement.parentElement;
+
+            //var vin = parentRow.getAttribute('data-vin');
+            //var seringa = parentRow.getAttribute('data-seringa');
+
+            var current_username = $(parentRow).data('username');
+            var current_nume = $(parentRow).data('name');
+
+            var children = $(parentRow).children();
+
+            var values = new Array();
+
+            children.each(function (i, child) {
+               if (i == 3) return;
+
+               var textarea = child.lastChild;
+               values.push($(textarea).val());
+            });
+
+            $.post('/script/manageAtelier.php', {
+               type: 'edit',
+               nume: values[0],
+               username: values[1],
+               parola: values[2],
+               current_user: current_username,
+               current_name: current_nume
+            }, function (data, status) {
+               if(data == 'success') {
+                  location.reload();
+               } else {
+                  alert(data);
+               }
+            });
+         }
+
+         function editRow(obj) {
+            var parentRow = obj.parentElement.parentElement;
+
+            //var vin = parentRow.getAttribute('data-vin');
+            //var seringa = parentRow.getAttribute('data-seringa');
+
+            //var vin = $(parentRow).data('vin');
+            //var seringa =  $(parentRow).data('seringa');
+            
+            //alert(vin + ' ' + seringa);
+
+            var children = $(parentRow).children();
+
+            var number = 0;
+
+            children.each(function (i, child) {
+               //number++;
+               if (i == 4) return;
+               if (i == 3) {
+                  child.innerHTML = '<button onclick="uploadRow(this);" class="btn btn-primary edit-btn">Confirma</button>';
+                  return;
+               }
+               var content = child.innerHTML;
+               //alert(content);
+               child.innerHTML = '<textarea class="edit-textarea">'+content+'</textarea>';
+            });
+
+            //alert(number);
+         }
+
+         $(document).ready(function () {
+            $.post('/script/manageAtelier.php', {type: 'load'}, function (data, status) {
+               var reply = JSON.parse(data);
+
+               for (var i in reply) {
+                  if (reply[i]['username'] == 'admin') continue;
+
+                  var $newRow = $('<tr>');
+
+                  $newRow.attr('data-username', reply[i]['username']);
+                  $newRow.attr('data-name', reply[i]['nume']);
+
+                  $newRow.append($('<td>').html(reply[i]['nume']));
+                  $newRow.append($('<td>').html(reply[i]['username']));
+                  $newRow.append($('<td>').html(reply[i]['parola']));
+                  $newRow.append($('<td>').html('<button onclick="editRow(this);" class="btn btn-warning edit-btn">Editeaza</button>'));
+                  
+                  
+
+                  if (reply[i]['enabled'] == 'yes') {
+                     $newRow.append($('<td>').html($('<button data-bool="true" onclick="controlAtelier(this);" class="btn btn-danger edit-btn">Dezactiveaza</button>')));
+                  } else {
+                     $newRow.append($('<td>').html($('<button data-bool="false" onclick="controlAtelier(this);" class="btn btn-success edit-btn">Activeaza</button>')));
+                  }
+
+
+                  $('#table-body').append($newRow);
+               }
+            });
+
+            $('#add-atelier-btn').click(function () {
+               var $newRow = $('<tr>');
+
+               $newRow.append($('<td>').html($('<textarea id="new-atelier-name" class="edit-textarea" placeholder="Nume">')));
+               $newRow.append($('<td>').html($('<textarea id="new-atelier-username" class="edit-textarea" placeholder="Username">')));
+               $newRow.append($('<td>').html($('<textarea id="new-atelier-password" class="edit-textarea" placeholder="Parola">')));
+               $newRow.append($('<td>').html('<button id="submit-atelier" class="btn btn-primary centered-block">Confirma</button>'));
+
+               $('#table-body').append($newRow);
+
+               $('#add-atelier-btn').remove();
+
+               $('#submit-atelier').click(function () {
+                  $.post('/script/manageAtelier.php', {
+                     type: 'insert',
+                     name: $('#new-atelier-name').val(),
+                     username: $('#new-atelier-username').val(),
+                     password: $('#new-atelier-password').val()
+                  }, function (data, status) {
+                     if (data == 'success') {
+                        location.reload();
+                     } else {
+                        alert(data);
+                     }
+                  });
+               });
+            });
+         });
+      </script>
+      <style>
+         .blue {
+            color: #32a3db;
+         }
+
+         .normal {
+            font-size: 200%;
+         }
+
+         .centered-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+
+         .centered-block {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+         }
+
+         p.centered {
+            text-align: center;
+         }
+
+         #vin-collector {
+            margin-top: 15px;
+            font-size: 170%;
+            padding: 16px;
+            border-radius: 20px;
+         }
+
+         .edit-btn, .delete-btn {
+            border-radius: 20px;
+            margin-left: 10px;
+            outline: none;
+         }
+
+         #submit-atelier {
+            border-radius: 20px;
+            outline: none;
+         }
+
+         #add-atelier-btn {
+            font-size: 25px;
+            color: #32a3db;
+            padding: 8px;
+            cursor: pointer;
+            transition: .3s;
+         }
+
+         #add-atelier-btn:hover {
+            background-color: #32a3db;
+            color: white;
+            border-radius: 25px;
+         }
+
+         .edit-textarea {
+            width: 100%;
+         }
+
+      </style>
+   </head>
+   <body id="cms" class="cms cms-2 cms-garantie hide-left-column hide-right-column lang_en">
+      <div id="page">
+         <div class="header-container">
+            <header id="header">
+               <div>
+                  <div class="container">
+                     <div class="row">
+                        <div class="toplinks col-xs-12">
+                           <a href="https://www.facebook.com/OptiCoatProRomania/" target="_blank">
+                           <i class="fa fa-facebook"></i>
+                           </a>
+                           <a href="https://www.youtube.com/channel/UCCLKHJGaZeXHwXO4sHxQW8g" target="_blank">
+                           <i class="fa fa-youtube"></i>
+                           </a>
+                           <a href="https://vimeo.com/channels/opt" target="_blank">
+                           <i class="fa fa-vimeo-square"></i>
+                           </a>
+                           <a href="https://www.instagram.com/OptiCoatHQ/" target="_blank">
+                           <i class="fa fa-instagram"></i>
+                           </a>
+                        </div>
+                        <div id="header_logo" class="col-xs-12 col-sm-3">
+                           <a href="http://www.opticoatpro.ro/" title="Opticoat">
+                           <img class="logo img-responsive" src="./index_files/dark-logo.png" alt="Opticoat" width="350" height="99">
+                           </a>
+                        </div>
+                        <!-- Menu -->
+                        <div id="block_top_menu" class="sf-contener clearfix col-xs-12 col-sm-9 col-md-7 col-lg-6 pull-right">
+                           <div class="cat-title">Meniu</div>
+                           <ul class="sf-menu clearfix menu-content sf-js-enabled sf-arrows">
+                              <li><a href="http://www.opticoatpro.ro/" title="Acasă">Acasă</a></li>
+                              <li><a href="http://www.opticoatpro.ro/12-produse" title="Produse Opti-Coat">Produse Opti-Coat</a></li>
+                              <li><a href="http://www.opticoatpro.ro/content/3-dealeri" title="Dealeri">Dealeri</a></li>
+                              <li><a href="http://www.opticoatpro.ro/content/category/2-garantie" title="Garanție">Garanție</a></li>
+                              <li><a href="http://www.opticoatpro.ro/content/1-media" title="Media">Media</a></li>
+                              <li><a href="http://www.detailinggeek.ro/" onclick="return !window.open(this.href);" title="Shop">Shop</a></li>
+                           </ul>
+                        </div>
+                        <!--/ Menu -->
+                     </div>
+                  </div>
+               </div>
+            </header>
+         </div>
+         <div class="columns-container">
+            <div id="columns" class="container">
+               <div class="row">
+                  <div id="center_column" class="center_column col-xs-12 col-sm-12">
+                     <!-- titlul categoriei cms e in cms.tpl -->
+                     <!-- Breadcrumb -->
+                     <div class="breadcrumb clearfix">
+                        <a class="home" href="http://www.opticoatpro.ro/" title="Return to Home"><i class="icon-home"></i></a>
+                        <span class="navigation-pipe">&gt;</span>
+                        <span class="navigation_page">
+                           <span class="navigation_end">Administrare Ateliere</span>
+                           <!--
+                              <span style="float: right; margin-right: 10px;" class="navigation_end"><a href="login.php">Login</a></span>
+                              
+                              <span style="float: right; margin-right: 10px;" class="navigation_end"><a href="lucrari.php">Lucrari</a></span>
+                              
+                              <span style="float: right;" class="navigation_end"><a href="ateliere.php">Ateliere</a></span>
+                              -->
+
+                              <a href="/manageopticoadarea/" style="float: right;">Administrare</a>
+                        </span>
+                     </div>
+                     <!-- /Breadcrumb -->
+                     <div class="block-cms">
+                        <h1 class="blue">Administrare Ateliere</h1>
+
+
+                        <div id='the-results' class="centered-div">
+                           <div style="width: 75%;">
+                              <table id='the-table' style="margin-top: 30px;" class="table">
+                                 <thead>
+                                    <tr>
+                                       <th scope="col">Nume</th>
+                                       <th scope="col">Username</th>
+                                       <th scope="col">Parola</th>
+                                       <th scope="col">Actiune</th>
+                                       <th scope="col">Activat</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody id="table-body">
+                                    <!--
+                                       <tr>
+                                           <td>Gheorghe Cristi</td>
+                                           <td>Gheorghe Cristi</td>
+                                       </tr>
+                                       -->
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+
+                        <p class='centered'><i id='add-atelier-btn' class="fas fa-plus"></i></p>
+
+                        <!--                 <p class="title_block">Introduce-ti VIN masini pentru a vedea datele de Service:</p>                         
+                           <ul class="bullet list-group">
+                                                   <li>
+                                                      <a class="list-group-item" href="http://www.opticoatpro.ro/content/6-termeni">
+                           				  Termeni
+                           				  </a>
+                                                   </li>
+                                                   <li>
+                                                      <a class="list-group-item" href="http://www.opticoatpro.ro/content/7-ghid-ingrijire-masina">
+                           				  Ghid ingrijire masina
+                           				  </a>
+                                                   </li>
+                                                </ul> 
+                           -->
+                     </div>
+                     <br>
+                  </div>
+                  <!-- #center_column -->
+               </div>
+               <!-- .row -->
+            </div>
+            <!-- #columns -->
+         </div>
+         <!-- .columns-container -->
+         <div class="container-fluid index-pro">
+            <div class="wrapper">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xs-12">
+                        <div class="logo">
+                           <img src="./index_files/logo-2.png">
+                        </div>
+                        <div class="titlu">O formulă nouă și îmbogățită</div>
+                        <div class="row">
+                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                              <img src="./index_files/slide-product.png" class="img-responsive">
+                           </div>
+                           <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 info">
+                              <br>
+                              Pachetul de protecție ceramică Opti-Coat Pro+ asigură mai mult luciu în timp ce păstrează aceeași structură chimică care i-a adus renumele ca cel mai bun (THE ULTIMATE) coating.
+                              <br><br>
+                              Formula avansată asigură pe lânga luciu și protecție superioară, proprietăți super-hidrofobe și anti “pete de apă” pentru a menține vopseaua perfectă pe termen lung.
+                              <br><br>
+                              Opti-Coat Pro+ este o versiune îmbunătățită, bi-componentă a Opti-Coat Pro. Primul pas aplicat este Opti-Coat Pro care asigură protecția chimică, mecanică și împotriva razelor UV. 
+                              <br>
+                              Al doilea pas Opti-Coat Pro+ asigură un luciu deosebit și protecția pe termen lung cu garanție de 7 ani. 
+                              <div class="pull-left full-width">
+                                 <a href="http://www.opticoatpro.ro/content/3-dealeri">GET PRO+ NOW!</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Footer -->
+         <div class="footer-container">
+            <div class="container-fluid">
+               <div class="container bottom-links">
+                  <div class="row">
+                     <div class="col-xs-12 col-sm-6 col-md-3 boxwrapper produse">
+                        <div class="wrap">
+                           <div class="titlu">
+                              Produse
+                           </div>
+                           <a href="http://www.opticoatpro.ro/produse-opti-coat/8-opti-coat-pro.html">Opti-Coat Pro</a>
+                           <a href="http://www.opticoatpro.ro/produse-opti-coat/9-opti-coat-pro.html">Opti-Coat Pro+</a>
+                           <a href="http://www.opticoatpro.ro/produse-opti-coat/10-opti-guard-fabric.html">Opti-Guard Fabric</a>
+                           <a href="http://www.opticoatpro.ro/produse-opti-coat/11-opti-guard-leather.html">Opti-Guard Leather</a>
+                           <a href="http://www.opticoatpro.ro/produse-opti-coat/12-opti-glass-pro.html">Opti-Glass Pro</a>
+                           <a href="http://www.opticoatpro.ro/produse-opti-coat/13-opti-trim.html">Opti-Trim</a>
+                           <a href="http://www.opticoatpro.ro/produse-opti-coat/14-optimum-paint-guard.html">Optimum Paint Guard</a>
+                           <a href="http://www.opticoatpro.ro/produse-opti-coat/15-opti-metal-coat.html">Opti-Metal Coat</a>
+                        </div>
+                     </div>
+                     <div class="col-xs-12 col-sm-6 col-md-3 boxwrapper">
+                        <div class="wrap">
+                           <div class="titlu">
+                              Informații
+                           </div>
+                           <a href="http://www.opticoatpro.ro/content/2-despre">Despre noi</a>
+                           <a href="http://www.opticoatpro.ro/content/3-dealeri">Dealeri</a>
+                           <a href="http://www.opticoatpro.ro/content/category/2-garantie#">Garanții</a>
+                           <a href="http://www.opticoatpro.ro/content/1-media">Media</a>
+                        </div>
+                     </div>
+                     <div class="col-xs-12 col-sm-6 col-md-3 boxwrapper">
+                        <div class="wrap">
+                           <div class="titlu">
+                              Link util
+                           </div>
+                           <a href="http://www.opticoatpro.ro/content/category/2-garantie#">Termeni garanție</a>
+                           <a href="http://www.opticoatpro.ro/content/category/2-garantie#">Ghid îngrijire</a>
+                        </div>
+                     </div>
+                     <div class="col-xs-12 col-sm-6 col-md-3 boxwrapper contact">
+                        <div class="wrap">
+                           <div class="titlu">
+                              Contactează-ne
+                           </div>
+                           <div class="adresa">Compania:</div>
+                           <div class="add-detalii">
+                              Geek Bordea International S.R.L.
+                              <br>
+                              Str. Miorița Nr.2, Ap.10,
+                              <br>
+                              Timișoara, Timiș
+                           </div>
+                           <div class="email">info@opticoatpro.ro</div>
+                           <div class="telefon">+4 0722-261.591</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="wrappermedia">
+               <div class="toplinks col-xs-12">
+                  <a href="https://www.facebook.com/OptiCoatProRomania/" target="_blank">
+                  <i class="fa fa-facebook"></i>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCCLKHJGaZeXHwXO4sHxQW8g" target="_blank">
+                  <i class="fa fa-youtube"></i>
+                  </a>
+                  <a href="https://vimeo.com/channels/opt" target="_blank">
+                  <i class="fa fa-vimeo-square"></i>
+                  </a>
+                  <a href="https://www.instagram.com/OptiCoatHQ/" target="_blank">
+                  <i class="fa fa-instagram"></i>
+                  </a>
+               </div>
+            </div>
+            <div class="container copyright">
+               <div class="row">
+                  <div class="col-xs-12 col-sm-6 text">
+                     © Geek Bordea International S.R.L.
+                     <br>
+                     Toate drepturile rezervate.
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                     <a href="http://www.opticoatpro.ro/" title="Opticoat">
+                     <img class="logo img-responsive" src="./index_files/dark-logo.png" alt="Opticoat" width="350" height="99">
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- #footer -->
+      </div>
+      <!-- #page -->
+   </body>
+</html>
